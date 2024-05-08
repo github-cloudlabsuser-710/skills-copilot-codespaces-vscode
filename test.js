@@ -29,16 +29,9 @@ class Calculator {
     getResult() {
         return this.result;
     }
-
-    reset() {
-        this.result = 0;
-        return this;
-    }
 }
 
-// Usage
-let calc = new Calculator();
-calc.add(5).subtract(2).multiply(3).divide(2);
-console.log(calc.getResult()); // Outputs: 4.5
-calc.reset();
-console.log(calc.getResult()); // Outputs: 0
+// Usage example
+const calc = new Calculator();
+calc.add(5).subtract(2).multiply(3).divide(1);
+console.log(calc.getResult()); // Outputs: 9
